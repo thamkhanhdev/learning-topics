@@ -4,5 +4,6 @@ def make_list(num):
         result.append(i*2)
     return result
 
+
 my_list = make_list(100)
 print(my_list)
