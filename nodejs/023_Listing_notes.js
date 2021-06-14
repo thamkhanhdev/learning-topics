@@ -25,5 +25,14 @@ yargs.command( {
     }
 } )
 
+yargs.command( {
+    command: 'list',
+    describe: 'List your notes',
+    handler: ( argv ) =>
+    {
+        notes.listNotes( )
+    }
+} )
+
 console.log( yargs.argv )
 // node app.js add --title="t2" --body="b2"
